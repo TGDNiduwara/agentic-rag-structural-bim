@@ -1,0 +1,41 @@
+{
+  "chunking": {
+    "strategy": "record",
+    "chunk_size": 900,
+    "chunk_overlap": 150
+  },
+  "dense": {
+    "enabled": true,
+    "sublinear_tf": true,
+    "min_df": 2,
+    "ngram_hi": 2,
+    "svd_dims": 384
+  },
+  "bm25": {
+    "enabled": true,
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "fusion": {
+    "method": "weighted",
+    "alpha": 0.85
+  },
+  "rerank": {
+    "category_boost": 0.0,
+    "top_k": 10,
+    "candidate_pool": 150
+  },
+  "agent": {
+    "self_check": true,
+    "score_floor": 0.2,
+    "max_rounds": 1,
+    "prf_docs": 0,
+    "prf_terms": 0,
+    "prf_weight": 0.35
+  },
+  "classifier": {
+    "C": 1.0,
+    "class_weight": null,
+    "max_iter": 300
+  }
+}

@@ -1,0 +1,20 @@
+# Generated corpus & benchmark data — regenerate deterministically with:
+#   python generate_synthetic_corpus.py
+data/
+
+# Cached index artifacts (rebuilt automatically on first query, keyed by config hash)
+index_store/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment / secrets
+.env
+
+# OS artifacts
+Thumbs.db
+.DS_Store
